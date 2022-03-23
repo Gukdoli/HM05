@@ -9,5 +9,11 @@
   - hm05_best3_movie.html : 
 
 ## 사용한 html 기술
--
--
+- list
+- iframe
+- media
+- div style
+- ol type
+- href
+- target
+- img src
