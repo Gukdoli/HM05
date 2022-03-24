@@ -17,3 +17,4 @@
 - href
 - target
 - img src
+- br
