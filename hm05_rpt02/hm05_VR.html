@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm05 : VR</title>
+		<style>
+			
+			#text1 {
+				position: fixed;
+				top: 200px;
+				left: 700px;
+				width: 110px;
+				padding: 5px;
+				background: rgb(17, 243, 243);
+				border-radius: 20%;}
+				
+			#text3 {
+				position: fixed;
+				top: 300px;
+				left: 70px;
+				width: 400px;
+				height: 400px;
+				padding: 5px;
+				background: rgb(17, 120, 204);
+				border-radius: 20%;
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px white,
+            				0 0 5px rgb(248, 41, 41);
+			}
+				
+			#text2 {
+				position: fixed;
+				top: 300px;
+				right: 70px;
+				width: 400px;
+				height: 400px;
+				padding: 5px;
+				background: rgb(17, 120, 204);
+				border-radius: 20%;
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px white,
+            				0 0 5px rgb(248, 41, 41);
+						}
+			#text4 {
+				position: fixed;
+				top: 300px;
+				left: 560px;
+				height: 400px;
+				width: 400px;
+				padding: 5px;
+				background: rgb(17, 120, 204);
+				border-radius: 20%;
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px white,
+            				0 0 5px rgb(248, 41, 41);
+			}
+
+			.main{background-color: aliceblue;
+			}
+
+			.title {
+        		   font-size: 60px;
+				   text-align: center;}
+			@keyframes textColorAnimation {
+			0% { color : blue; }
+			30% { color : green;}
+			100% { color : red;}
+			}
+			span {
+				animation-name: textColorAnimation;
+				animation-duration: 20s;
+				animation-iteration-count: infinite;
+				transition : font-size 5s;
+			}
+		</style>
+		<script></script>
+	</head>
+
+	<body class="main">
+	<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+			<div>
+			<h1 class="title"><span>VR 동호회 가입을 축하드립니다. </span></h1>
+    		</div>
+			<div id="text1">
+				<div>
+					자주 하는 질문
+				</div>
+				<div id="text2">
+					<div style="text-align:center">
+						<br>
+						어떤 활동을 하나요?<br><br>
+						저희 VR 동호회 에서는 VR 장비를 통해 게임, <br>
+						 운동 등 다양한 체험들을 가상현실 세계에서 <br>
+						  직접 체험하실수 있습니다. <br><br>
+						  평소에 하기 힘들었던 다이빙, 번지점프 <br> 등 익스트림 스포츠 또한 <br>
+						  실감나게 체험 가능합니다. <br><br>
+						  또한 저희는 정기적으로 오프라인 모임도 <br> 가지고 있으니 적극적인 참여 부탁드리겠습니다. <br><br><br><br>
+					- VR 동호회 대표 김성우
+
+					</div>
+				<div id="text3">
+					<div style="text-align:center"><br>
+						VR이 뭐죠? <br><br><br>
+						VR은 컴퓨터로 만들어 놓은 가상의 세계에서<br> 사람이 실제와 같은 체험을 할 수 있도록 하는 <br> 최첨단 기술 입니다.<br><br><br><br><br> 머리에 장착하는 디스플레이 디바이스인<br> HMD를 활용해 체험할 수 있습니다.<br>
+						<br><br><br>
+					- VR 동호회 대표 김성우
+					</div>
+						<div id="text4">
+							<div style="text-align:center"><br>
+								회비 및 VR 가격은 얼마나 나가죠?<br><br>
+								회비는 첫 가입비 20000원, 달에 10000원씩 걷고 있습니다.<br><br>
+								VR 기기 같은 경우 제품마다 편차가 크지만 <br>
+								네이버 쇼핑 기준 VIVE HTC 바이브 VR 기기 PRO 풀세트 VR / 3D 안경 <br>
+								풀세트 제품이 2100000원 입니다. <br><br>
+								가격이 너무 부담 되신다구요? <br>
+								저희 VR동호회가 기기의 80% 값을 지원해드립니다. <br>
+								<br><br><br>
+					- VR 동호회 대표 김성우
+								
+
+							</div>			
+	</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm05 : iframe - target control</title>
+		<style>
+			@keyframes textColorAnimation {
+			0% { color : blue; }
+			30% { color : green;}
+			100% { color : red;}
+			}
+			span {
+				animation-name: textColorAnimation;
+				animation-duration: 10s;
+				animation-iteration-count: infinite;
+				transition : font-size 5s;
+			}
+			span:hover {
+				font-size: 200%;
+			}
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+		<h3><span>좋아하는 영화 3가지</span></h3> 
+		<hr>
+		<form>
+			좋아하는 영화 : <input type="text" name="st_department" list="depList"><br>
+			
+			<datalist id="depList">
+				<option value="인터스텔라"></option>
+				<option value="쥬라기공원"></option>
+				<option value="어벤져스"></option>
+			</datalist>
+			<br>
+			
+		</form>
+
+		
+		<p align="middle"><iframe width="560" height="315" src="https://www.youtube.com/embed/vABfjuXZhYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p><br>
+		<div style="text-align:center"> <span>인터스텔라 (2014)</span><br><br>
+			개봉 2014.11.06.<br>
+			등급 12세 관람가<br>
+			장르 SF<br>
+			국가 미국, 영국<br>
+			러닝타임 169분<br>
+			배급 워너 브러더스 코리아㈜, 워너 브러더스 코리아㈜<br>
+
+			<br><br> 
+			<hr>
+			<br>
+		
+		<p align="middle"><iframe width="560" height="315" src="https://www.youtube.com/embed/DSEfRVqjbFA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p><br>
+		<div style="text-align:center"> <span>쥬라기 공원 (2015)</span><br><br>
+			개봉
+			2015.06.11.<br>
+			등급
+			12세 관람가<br>
+			장르
+			액션, 모험, SF, 스릴러<br>
+			국가 미국<br>
+			러닝타임 125분<br>
+			배급 유니버설 픽쳐스<br>
+			<hr>
+			<br>
+		<p align="middle"><iframe width="560" height="315" src="https://www.youtube.com/embed/mck3JCl2uwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p><br>
+		<div style="text-align:center"> <span>어벤져스(2012)</span><br><br>
+			개봉 2012.04.26.<br>
+			등급 12세 관람가<br>
+			장르 액션, SF, 모험<br>
+			국가 미국<br>
+			러닝타임 142분<br>
+			배급 소니 픽쳐스 릴리징 브에나 비스타 영화㈜<br><br>
+			
+	</body>
+
+	</body>

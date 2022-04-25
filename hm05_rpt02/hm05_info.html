@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm05 : iframe - target control</title>
+		<style>
+			@keyframes textColorAnimation {
+			0% { color : blue; }
+			30% { color : green;}
+			100% { color : red;}
+			}
+			span {
+				animation-name: textColorAnimation;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+				transition : font-size 5s;
+			}
+			#sigan {
+            position: fixed;
+            top: 120px;
+            left: 150px;
+            width: 350px;
+            padding: 5px;
+			
+        }
+		#winter {
+            position: fixed;
+            top: 120px;
+            right: 150px;
+            width: 350px;
+            padding: 5px;
+			
+        }
+		#fixed17 {
+				position: fixed;
+				top: 450px;
+				left: 570px;
+				width: 200px;
+				padding: 10px;
+				color: black;
+			}
+		</style>
+		<script></script>
+	</head>
+
+    <body>
+		<br><div style="text-align:center"><h4> <span>김성우</span>를 소개합니다. </h4> <br><br>
+        
+        <li> 이름 : 김성우				 
+        <li> 생년월일 : 2000 / 01 / 31
+		<li> 연락처 : 010 - 2446 - xxxx
+		<li> 좋아하는 음식 : 한식			
+        <li> 군대 출신 : 육군 제11기계화보병사단 
+		<li> 좋아하는 아이돌 : 윈터 	
+			<img src = "media/sigan.jpg" id ="sigan">
+			<img src = "media/winter.jpg" id ="winter">
+			<div id="fixed17">
+				<br><a> <span>경서예지, 전건호 <br> 다정히 내 이름을 부르면</span></a>
+				<audio src='/media/다정히.mp3' width='400' controls>
+			</div>
+	</body>
+
+</html>
