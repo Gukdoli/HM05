@@ -1,7 +1,7 @@
 # HM05 두번째 홈피 프로젝트
 
 ## 파일구조 및 설명 
-- hm05_rpt02 : 나의 시작 홈페이지 1개의 IFrame과 기존 세로의 메뉴바를 가로로 변경함
+- hm05_rpt02 : 나의 시작 홈페이지 1개의 IFrame과 기존 세로의 메뉴바를 가로로 변경함 구글에서 눈내리는 효과를 홈페이지에 추가함
 - hm05_info : 나를 소개함 list, div, audio, textcoloranimation 사용
 - hm05_day : 나의 하루에 대해서 소개함 div, box-shadow, text-shadow 사용
 - hm05_best3 : 좋아하는 영화 3가지에 대해 소개하였음. datalist, youtube 동영상을 IFrame 안에 넣었음
