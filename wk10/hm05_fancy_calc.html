@@ -8,11 +8,11 @@
     <style>
       div.calculator {
             background-color:rgb(255, 255, 255);
-            height:500px;
+            height:550px;
             width:530px;
             border-radius:15px;
             position: absolute;
-            top:150px;
+            top:120px;
             left:500px;
             box-shadow: 2px 2px 2px black,
             				0 0 10px white,
@@ -133,7 +133,24 @@ button:focus {
           expression = expression_num*3.14159265359;
         document.getElementById("display").value = expression;
       }
-      
+      function hex() {
+        var expression_num = parseInt(eval(expression));
+          expression = expression_num.toString(16);
+        document.getElementById("display").value = expression;
+      }
+
+      function oct() {
+        var expression_num = parseInt(eval(expression));
+          expression = expression_num.toString(8);
+        document.getElementById("display").value = expression;
+      }
+
+      function bin() {
+        var expression_num = parseInt(eval(expression));
+          expression = expression_num.toString(2);
+        document.getElementById("display").value = expression;
+      }
+
     </script>
   </head>
 
@@ -184,6 +201,10 @@ button:focus {
         <input id="op" type="button" value="   tan   " onclick="tan()" />
         <input id="op" type="button" value="x&sup2" onclick="pow(this.form.display)" />
         <input id="op" type="button" value=" % " onclick="add('%')" />
+        <br />
+        <input id="op" type="button" value="    hex      " onclick="hex()" />
+        <input id="op" type="button" value="    oct     " onclick="oct()" />
+        <input id="op" type="button" value="     bin     " onclick="bin()" />
         <br />
         <input id="clear" type="button" value="        Clear         "
           onclick="clearDisplay()"
