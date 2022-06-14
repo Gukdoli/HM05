@@ -1,1 +1,53 @@
+# HM05 세번째 홈피 프로젝트
 
+## 파일구조 및 설명 
+- hm05_rpt03, clock : 나의 시작 홈페이지 1개의 IFrame과 기존 세로의 메뉴바를 가로로 변경함 submenu를 추가하고 메인에 접속한 시간을 나타냄
+- hm05_home : rpt03파일을 실행시키면 가장 처음보이는 화면 자바스크립트를 이용해 버튼을 누르면 오디오가 나오게끔 설정했고 글자에게 재밌는 효과들을 추가함
+- hm05_info : 나를 소개함 list, div, audio, textcoloranimation 사용하였고 자바스크립트로 클릭시 이미지가 바뀌고 이미지의 폭과 높이가 나오게끔 설정하였음
+- hm05_day : 나의 하루에 대해서 소개함 div, box-shadow, text-shadow, spanhover 사용하였고 자바스크립트로 텍스트 클릭시 사진이 나오게끔 설정했다.
+- hm05_best3, mv1, mv2 : 좋아하는 영화 3가지에 대해 소개하였음. datalist, youtube 동영상을 IFrame 안에 넣었고 자바스크립트로 원하는 영화를 선택하면 그 페이지로 이동하게끔 하였다.
+- hm05_bestsing1, 2, 3 : 좋아하는 노래 3가지에 대하여 설명하였고 스크립트를 이용해 best3와 다르게 원하는 노래를 선택하고 버튼을 누르면 이동하게끔 설정하였다. 설명부분에 버튼을 누르면 주요키워드가 나오게끔 설정하였다.
+- hm05_card : 크리스마스 카드를 만들었음 div, rotate_image, text-shadow 등 사용가능한 효과들은 다 사용
+- hm05_card1 : card 파일을 홈페이지 내에서 중앙정렬 시키기 위해 새로운파일 card1을 만들어 card 파일을 iframe 안에넣어 p align="middle" 로 중앙정렬 해주었음 
+- hm05_form : 동호회 가입을 위한 회원가입 창 구현 web form과 fieldset 사용하고 자바스크립트로 오른쪽 클릭을 막아놓고, 가입신청 버튼을 누르면 메세지가 출력되게 하였고, 성별 부분에서 중성체크를 할수없게 막아놓았다. 그리고 직업에서 무직 선택시 메세지를 출력되게 하였다.
+- hm05_VR : 동호회 가입후 동호회에 관련한 QnA 소개와 스크립트를 이용해 프린트가 가능하게 설정하였다.
+- hm05_maker : html 코딩연습이 가능하게끔 만들었으며 누른 키보드키를 출력되게 하였다.
+- hm05_calculator : 강의 시간에 우리가 만들었던 계산기를 홈페이지에 추가하였다.
+- hm05_weather : 홈페이지에 날씨를 볼수있게 설정하였다.
+
+## 사용한 html 기술
+- list
+- iframe
+- keyframes
+- span
+- div
+- img src
+- audio
+- br
+- box-shadow
+- text-shadow
+- textColorAnimation
+- rotate_image
+- border-radius
+- input
+- hover
+- datalist
+- align
+- legend
+- form
+- fieldset
+- window.open
+- submenu
+- change
+- add
+- del
+- compute
+- sin
+- cos
+- tan
+- load
+- findcheck
+- change img
+- getCheckboxValue
+- showAlert
+- hideMenu
