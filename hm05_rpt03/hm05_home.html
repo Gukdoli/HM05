@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	
+	<style>
+	
+		.container {
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+    .multiEffect {
+				color: white;
+				text-shadow: 2px 2px 2px black, 0 0 25px skyblue, 0 0 5px skyblue;
+        font-size: 100px;
+			}
+      .multiEffect1 {
+				color: white;
+				text-shadow: 2px 2px 2px black, 0 0 25px skyblue, 0 0 5px skyblue;
+        font-size: 40px;
+			}
+	</style>
+	<script>
+    var audio = new Audio('media/welcome.mp3');
+
+</script>
+
+</head>
+
+
+<body>
+  <br><br><br><br><br><br><br><br>
+	<marquee behavior="alternate"><h1 class="multiEffect" style="text-align: center;">Welcome to my homepage</h1></marquee>
+  <br><br>
+    <marquee direction=up height=50 behavior=alternate>.<h1 class="multiEffect1" style="text-align: center;">HM05 김성우</h1></marquee>
+      <input type="button"  onclick="audio.play();" value="Click here">
+</body>
+
+</html>

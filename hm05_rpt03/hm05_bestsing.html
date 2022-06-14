@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hm05</title>
+    <style>
+	
+			.multiEffect {
+				color: white;
+				text-shadow: 2px 2px 2px black, 0 0 25px skyblue, 0 0 5px skyblue;
+			}
+		</style>
+    <script>
+        function load() {
+          var select = document.getElementById("site");
+          window.location =select.options[select.selectedIndex].value;
+        }
+        function change() {
+var spanArray = document.getElementsByTagName("span");
+for(var i=0; i<spanArray.length; i++) {
+var span = spanArray[i];
+span.style.color = "blue";
+span.style.fontSize = "20px";
+}
+}
+
+      </script>
+      
+</head>
+<body>
+<h4>
+    <h3>
+      <h1 class="multiEffect" style="text-align: center;">Best Song 3</h1>
+    </h3>
+    <hr>
+    <div style="text-align:center">노래 선택 :
+    <div style="text-align:center"><select id="site">
+    <option value='hm05_bestsing.html' selected>-- 선택 --</option>
+      <option value="hm05_bestsing.html">정은지 - 하늘바라기 </option>
+      <option value="hm05_bestsing3.html">마크툽 - 찰나가 영원히 될때</option>
+      <option value="hm05_bestsing2.html">오왼 오바도즈 - City </option>
+    </select>
+
+    <p>
+      <button onclick="load()">이동</button>
+    </p>
+    <h3>
+
+        <li>
+            <a href="https://www.youtube.com/watch?v=nzDO6tAB6ng" target="_blank">정은지 하늘바라기</a> 이다.
+            <h4>
+            
+                <img src="media/hanul.jpg" width="200" height="200">
+                <br><br><button onclick="change()">누르세요</button>
+            </h4>
+        <h4>
+         
+           
+            
+            <span>정은지</span>는
+            단순히 아이돌을 넘어서 대한민국 여자 가수 중 손에 꼽힐 정도로<span>가창력</span>이 뛰어나고, 그룹과 솔로 활동 모두 주요 음원 사이트 1위, 음악방송 1위를 차지하며 성공적인 커리어를 쌓고 있는 가수이자 솔로 앨범 전곡을 작사, 작곡, 프로듀싱하는 싱어송라이터이다. 20살 어린 나이임에도 불구하고 사투리 연기와 생활 연기로 뛰어난 연기력에 주목받아 대중적 인지도를 높이며 배우로서 다양한 드라마와 영화에서 연기 활동을 활발하게 펼치고 있다. 2012년 뮤지컬배우로 데뷔하며 꾸준히 뮤지컬배우로서 호평을 받고 있고, 2019년부터 라디오 DJ를 하며 남녀노소 모두에게 사랑받고 있다. 털털하고 재치있는 성격으로 예능에서도 활약한다. 아이돌, 솔로가수, 배우, 뮤지컬배우, 라디오 DJ, 유튜버 등 다양한 분야에서 꾸준히 활동하는 다재다능한 멀티 엔터테이너이다.
+
+            <span>가수, 배우, 라디오 DJ, 뮤지컬 배우</span> 등 본인이 활약하는 분야에서 모두 상을 수상하기도 했다.
+
+        </h4>
+        <span>하늘바라기</span>는
+        최고의 프로듀싱팀  <span>이단옆차기, long candy, EASTWEST와 정은지</span>의 공동작업으로 탄생한 <span>"하늘바라기는"</span> 봄의 정취가 한껏 느껴지는 하림의 하모니카 연주로 시작하여 어쿠스틱 기타와 정은지의 감성 짙은 보컬이 어우러지며 이 시대의 모든 아버지들을 향한 진한 감동의 메시지를 담았다. 기획부터 작곡 작사 편곡에 이르는 모든 부분에 적극적인 참여와 공동작업으로 작은 디테일까지 살려 완성도를 더한 <span>"하늘바라기"</span>를 통해 진정한 정은지의 음악을 느낄 수 있다.
+        <br>
+    </h4>
+    </h3>
+</h4>
+</body>
+</html>

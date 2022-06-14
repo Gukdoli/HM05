@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm05 : iframe - target control</title>
+		<style>
+			@keyframes textColorAnimation {
+			0% { color : blue; }
+			30% { color : green;}
+			100% { color : red;}
+			}
+			span {
+				animation-name: textColorAnimation;
+				animation-duration: 10s;
+				animation-iteration-count: infinite;
+				transition : font-size 5s;
+			}
+			span:hover {
+				font-size: 200%;
+			}
+			.multiEffect {
+				color: white;
+				text-shadow: 2px 2px 2px black, 0 0 25px skyblue, 0 0 5px skyblue;
+			}
+		</style>
+			<script>
+
+				function movie() {
+				var sel = document.getElementById("movie");
+
+}
+
+			</script>
+	</head>
+
+	<body>
+		<h1 class="multiEffect" style="text-align: center;">Best Movie 3</h1>
+	
+		<form>
+			<div style="text-align:center"><select style="width: 500px;" onchange="if(this.value) location.href=(this.value);" name="movie">
+				<option value='' selected>-- 선택 --</option>
+				<option value="hm05_best3.html">인터스텔라</option>
+				<option value="hm05_mv1.html">쥬라기공원</option>
+				<option value="hm05_mv2.html">어벤져스</option>
+	
+	
+			</select>
+		</form>
+		
+		<p align="middle"><iframe width="560" height="315" src="https://www.youtube.com/embed/vABfjuXZhYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p><br>
+		<div style="text-align:center"> <span>인터스텔라 (2014)</span><br><br>
+			개봉 2014.11.06.<br>
+			등급 12세 관람가<br>
+			장르 SF<br>
+			국가 미국, 영국<br>
+			러닝타임 169분<br>
+			배급 워너 브러더스 코리아㈜, 워너 브러더스 코리아㈜<br>
+
+			<br><br> 
+			<hr>
+			<br>
+		
+	</body>
+
+	</body>

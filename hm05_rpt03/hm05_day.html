@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm05 : iframe - target control</title>
+		<style>
+			#text1 {
+				position: fixed;
+				top: 100px;
+				left: 530px;
+				width: 400px;
+				padding: 5px;
+				background: rgb(74, 255, 89);
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px white,
+            				0 0 5px rgb(248, 41, 41);
+            	text-shadow: 2px 2px 4px rgb(255, 255, 255);
+				border-radius: 10%;
+			}
+			
+			span:hover{
+    font-size: 17pt;
+    color:rgb(219, 241, 255);
+}  
+		</style>
+		<script>
+			function change() {
+var p = document.getElementById("firstP");
+p.innerHTML= "<img src='media/ij2.jpg'>";
+}
+		</script>
+	</head>
+
+    <body>
+
+        <div style="text-align:center"><span style="color: rgb(255, 220, 175);"><h3>김성우의 목요일 하루</h3></span>
+        <hr>
+        
+		<div id="text1">
+			<div>
+				<div style="text-align:center">
+				<span>아침 8시 기상</span><br><br>
+				<span>8시 30분 까지 개인 세면세족</span><br><br>
+				<span>9시 까지 학교 책 및 준비물 준비</span><br><br>
+				<span>9시 ~ 13시 까지 수업</span><br><br>
+				<span>13시 학식 섭취</span><br><br>
+				<span>4시 ~ 18시 까지 수업</span><br><br>
+				<span>18시 집으로 귀가</span><br><br>
+				<span>18시 30분 저녁 식사</span><br><br>
+				<span>19시 개인 세면세족</span><br><br>
+				<span>19시 30분 ~ 22시 까지 과제 및 개인정비</span><br><br>
+				<span>22시 취침</span><br><br>
+
+				<p id="firstP" style="color:blue"
+onclick="change()">
+<span style="color:red">클릭하세요</span>
+</p>
+				
+
+        </div>
+        
+
+	</body>
+
+</html>

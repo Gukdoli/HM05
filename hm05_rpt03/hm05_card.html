@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm05 : CSS3 advanced</title>
+		<style>
+			#fixed {
+				position: fixed;
+				top: 550px;
+				left: 500px;
+				width: 100px;
+				padding: 5px;
+				background: rgb(238, 107, 19);
+				color: white;
+			}
+			#fixed2 {
+				position: fixed;
+				top: 550px;
+				left: 350px;
+				width: 100px;
+				padding: 5px;
+				background: rgb(253, 253, 53);
+				color: black;
+			}
+			#fixed3 {
+				position: fixed;
+				top: 140px;
+				left: 140px;
+				width: 14px;
+				padding: 5px;
+				background: rgb(52, 196, 253);
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px white,
+            				0 0 5px rgb(248, 41, 41);
+            	text-shadow: 2px 2px 4px black;
+				
+			}
+			#fixed4 {
+				position: fixed;
+				top: 160px;
+				left: 230px;
+				width: 12px;
+				padding: 5px;
+				background: rgb(37, 245, 37);
+				border-radius: 50%;
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px white,
+            				0 0 5px rgb(248, 41, 41);
+            	text-shadow: 2px 2px 4px black;
+				
+			}
+			#fixed5 {
+				position: fixed;
+				top: 200px;
+				left: 80px;
+				width: 13px;
+				padding: 5px;
+				background: rgb(240, 139, 23);
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px white,
+            				0 0 5px rgb(248, 41, 41);
+            	text-shadow: 2px 2px 4px black;
+				
+			}
+			#fixed6 {
+				position: fixed;
+				top: 210px;
+				left: 180px;
+				width: 12px;
+				padding: 5px;
+				background: rgb(223, 223, 223);
+				border-radius: 50%;
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px white,
+            				0 0 5px rgb(248, 41, 41);
+            	text-shadow: 2px 2px 4px black;
+				
+			}
+			#fixed7 {
+				position: fixed;
+				top: 200px;
+				left: 280px;
+				width: 12px;
+				padding: 5px;
+				background: rgb(255, 248, 181);
+				
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px white,
+            				0 0 5px rgb(248, 41, 41);
+            	text-shadow: 2px 2px 4px black;
+				
+			}
+			
+			
+			#fixed8 {
+				position: fixed;
+				top: 270px;
+				left: 50px;
+				width: 12px;
+				padding: 5px;
+				background: mediumaquamarine;
+				color: navy;
+				border-radius: 50%;
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px white,
+            				0 0 5px rgb(248, 41, 41);
+            	text-shadow: 2px 2px 4px black;
+			}
+			#fixed9 {
+				position: fixed;
+				top: 280px;
+				left: 140px;
+				width: 12px;
+				padding: 5px;
+				background: cornsilk;
+				color: purple;
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px white,
+            				0 0 5px rgb(248, 41, 41);
+            	text-shadow: 2px 2px 4px black;
+			}
+			#fixed10 {
+				position: fixed;
+				top: 280px;
+				left: 240px;
+				width: 14px;
+				padding: 5px;
+				background: red;
+				color: skyblue;
+				border-radius: 50%;
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px white,
+            				0 0 5px rgb(248, 41, 41);
+            	text-shadow: 2px 2px 4px black;
+			}
+			#fixed11 {
+				position: fixed;
+				top: 270px;
+				left: 310px;
+				width: 13px;
+				padding: 5px;
+				background: orange;
+				color: green;
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px white,
+            				0 0 5px rgb(248, 41, 41);
+            	text-shadow: 2px 2px 4px black;
+			}
+			#fixed12 {
+				position: fixed;
+				top: 360px;
+				left: 10px;
+				width: 13px;
+				height: 20px;
+				padding: 5px;
+				background: yellow;
+				color: rgb(163, 118, 118);
+				border-radius: 50%;
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px white,
+            				0 0 5px rgb(248, 41, 41);
+            	text-shadow: 2px 2px 4px black;
+			}
+			#fixed13 {
+				position: fixed;
+				top: 360px;
+				left: 100px;
+				width: 13px;
+				padding: 5px;
+				background: rgb(114, 114, 81);
+				color: red;
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px rgb(255, 255, 255),
+            				0 0 5px rgb(248, 41, 41);
+            	text-shadow: 2px 2px 4px black;
+			}
+			#fixed14 {
+				position: fixed;
+				top: 325px;
+				left: 180px;
+				width: 12px;
+				padding: 5px;
+				background: mediumaquamarine;
+				color: navy;
+				border-radius: 50%;
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px white,
+            				0 0 5px rgb(248, 41, 41);
+            	text-shadow: 2px 2px 4px black;
+			}
+			#fixed15 {
+				position: fixed;
+				top: 360px;
+				left: 230px;
+				width: 13px;
+				padding: 5px;
+				background: yellow;
+				color: red;
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px white,
+            				0 0 5px rgb(248, 41, 41);
+            	text-shadow: 2px 2px 4px black;
+			}
+			#fixed16 {
+				position: fixed;
+				top: 360px;
+				left: 345px;
+				width: 12px;
+				padding: 5px;
+				background: mediumaquamarine;
+				color: navy;
+				border-radius: 50%;
+				box-shadow: 2px 2px 2px black,
+            				0 0 25px white,
+            				0 0 5px rgb(248, 41, 41);
+            	text-shadow: 2px 2px 4px black;
+			}
+			#fixed17 {
+				position: fixed;
+				top: 500px;
+				left: 1px;
+				width: 200px;
+				padding: 10px;
+				color: black;
+			}
+
+				p {
+            background: rgb(47, 37, 138);
+            width: 650px;
+            height: 400px;
+            padding: 10px;
+			border-radius: 5%;
+            
+			}
+			
+				@keyframes textColorAnimation {
+			0% { color : blue; }
+			30% { color : green; }
+			100% { color : red; }
+			}
+				span1 {
+			animation-name : textColorAnimation;
+			animation-duration : 5s;
+			animation-iteration-count : infinite;
+				}
+				span2 {
+			animation-name : textColorAnimation;
+			animation-duration : 3s;
+			animation-iteration-count : infinite;
+			}
+			span3 {
+			animation-name : textColorAnimation;
+			animation-duration : 5s;
+			animation-iteration-count : infinite;
+			transition : font-size 5s;
+				}
+			span3:hover {
+			font-size : 200%;
+			}
+
+			#snow1 {
+            position: fixed;
+            top: 290px;
+            left: 250px;
+            width: 100px;
+            padding: 5px;
+			animation: rotate_image 6s
+			 linear infinite;
+			transform-origin: 50% 50%;
+			
+        }
+			#snow2 {
+            position: fixed;
+            top: 70px;
+            left: 30px;
+            width: 100px;
+            padding: 5px;
+			animation: rotate_image 6s
+			 linear infinite;
+			transform-origin: 50% 50%;
+        }
+			#snow3 {
+            position: fixed;
+            top: 100px;
+            left: 250px;
+            width: 100px;
+            padding: 5px;
+			animation: rotate_image 6s
+			 linear infinite;
+			transform-origin: 50% 50%;
+        }
+		#snow4 {
+            position: fixed;
+            top: 225px;
+            left: 150px;
+            width: 100px;
+            padding: 5px;
+			animation: rotate_image 6s
+			 linear infinite;
+			transform-origin: 50% 50%;
+        }
+			#snow5 {
+            position: fixed;
+            top: 400px;
+            left: 260px;
+            width: 100px;
+            padding: 5px;
+			animation: rotate_image 6s
+			 linear infinite;
+			transform-origin: 50% 50%;
+        }
+			#snow6 {
+            position: fixed;
+            top: 180px;
+            left: -5px;
+            width: 100px;
+            padding: 5px;
+			animation: rotate_image 6s
+			 linear infinite;
+			transform-origin: 50% 50%;
+        }
+		#snow7 {
+            position: fixed;
+            top: 390px;
+            left: 40px;
+            width: 100px;
+            padding: 5px;
+			animation: rotate_image 6s
+			 linear infinite;
+			transform-origin: 50% 50%;
+        }
+		#santa {
+            position: fixed;
+            top: 120px;
+            left: 350px;
+            width: 350px;
+            padding: 5px;
+			
+        }
+		
+		#tree {
+            position: fixed;
+            top:-49px;
+            left: -80px;
+            width: 830px;
+			height: 810px;
+            
+			
+        }
+
+		@keyframes rotate_image {
+			 100% { transform: rotate(360deg); 
+			} 
+		}
+
+
+
+										
+			
+
+			
+	
+		</style>
+
+			
+</style>
+<script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+		
+	</head>
+
+	<body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+		<h3> <span1>Merry Christmas!</h3><span1> 
+		<hr>
+		<div id="p">
+		<p id="round">
+		<img src="media/christmastree.png"
+		width="350" height="350" 
+		alt="크리스마스 트리">
+		<img src = "media/santa.png" id ="santa">
+		<img src = "media/border.png" id ="tree">
+		
+		<div id="fixed">
+			<span3>예수님</span3>이 탄생하셨습니다.
+			<div id="fixed2">
+			HM05<br> <span3>김성우</span3>
+		</div>
+		<br>
+		<div id="fixed3">
+			<span2>M</span2>
+		</div>
+		<div id="fixed4">
+			<span1>E</span1>	
+		</div>
+		<div id="fixed5">
+			<span2>R</span2>
+		</div>
+		<div id="fixed6">
+			<span1>R</span1>
+		</div>
+		<div id="fixed7">
+			<span2>Y</span2>
+		</div>
+		<div id="fixed8">
+			<span1>C</span1>
+		</div>
+		<div id="fixed9">
+			<span2>H</span2>
+		</div>
+		<div id="fixed10">
+			<span1>R</span1>
+		</div>
+		<div id="fixed11">
+			<span2>I</span2>
+		</div>
+		<div id="fixed12">
+			<span1>S</span1>
+		</div>	
+		<div id="fixed13">
+			<span2>T</span2>
+		</div>
+		<div id="fixed14">
+			<span1>M</span1>
+		</div>
+		<div id="fixed15">
+			<span2>A</span2>
+		</div>
+		<div id="fixed16">
+			<span1>S</span1>
+		</div>
+		<div id="fixed17">
+			<br><a> 아리아나 그란데 <br><span3> Last Christmas</span3></a>
+			<audio src='media/carrol.mp3' width='400' controls>
+		</div>
+		<img src = "media/snow.png" id ="snow1">
+		<img src = "media/snow.png" id ="snow2">
+		<img src = "media/snow.png" id ="snow3">
+		<img src = "media/snow.png" id ="snow4">
+		<img src = "media/snow.png" id ="snow5">
+		<img src = "media/snow.png" id ="snow6">
+		<img src = "media/snow.png" id ="snow7">
+
+	
+
+	</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hm05</title>
+    <style>
+		
+			.multiEffect {
+				color: white;
+				text-shadow: 2px 2px 2px black, 0 0 25px skyblue, 0 0 5px skyblue;
+			}
+		</style>
+    <script>
+        function load() {
+          var select = document.getElementById("site");
+          window.location =select.options[select.selectedIndex].value;
+        }
+        function change() {
+var spanArray = document.getElementsByTagName("span");
+for(var i=0; i<spanArray.length; i++) {
+var span = spanArray[i];
+span.style.color = "blue";
+span.style.fontSize = "20px";
+}
+        }
+      </script>
+</head>
+<body>
+<h4>
+    <h3>
+      <h1 class="multiEffect" style="text-align: center;">Best Song 3</h1>
+    </h3>
+    <hr>
+    <div style="text-align:center">노래 선택 :
+    <div style="text-align:center"><select id="site">
+		<option value='' selected>-- 선택 --</option>
+      <option value="hm05_bestsing.html" >정은지 - 하늘바라기 </option>
+      <option value="hm05_bestsing3.html">마크툽 - 찰나가 영원히 될때 </option>
+      <option value="hm05_bestsing2.html">오왼 오바도즈 - City</option>
+    </select>
+
+    <p>
+      <button onclick="load()">이동</button>
+    </p>
+  
+    <h3>
+
+        <li>
+            <a href="https://www.youtube.com/watch?v=nEjkcP949Dg" target="_blank">오왼 오바도즈 city</a> 이다.
+            <h4>
+            
+                <img src="media/city.jpg" width="200" height="200">
+                <br><br><button onclick="change()">누르세요</button>
+            </h4>
+        <h4>
+            <span>오왼 오바도즈</span>는 
+            대한민국의 래퍼.
+            베이스크림 크루에 속해있으며 <span>MKIT RAIN</span> 레코즈의 네 번째 멤버이다.[10]
+            곡 가사에서 미국 뉴저지가 자주 언급되어 출생지가 뉴저지로 추정됐으나, 최근 촬영한 미니 다큐에 의하면 출생지는 본인도 모른다고 한다. 서울 구산동에서 살다가 경상남도 진주시로 이사, 그 뒤로 뉴저지의 포트리로 어머니와 함께 건너가 살다 중학교 2학년 때 한국으로 돌아왔다. 그리고 <span> RAIN 레코즈</span>에 들어가고자 직접 LA로 찾아갔고 <span>루피, nafla</span>와 함께 음악 활동을 하기 시작했다.
+
+        <h4>
+        city는<br>
+        <span>오왼 오바도즈</span>의 싱글이자, 대표곡. 2016년 3월 14일에 낸 곡이며, 작곡과 편곡은 <span>그루비룸</span>이 했다.     
+        </h4>
+
+    </h3>
+</h4>
+</body>
+</html>

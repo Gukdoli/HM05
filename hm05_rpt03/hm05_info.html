@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm05 : iframe - target control</title>
+		<style>
+		@keyframes textColorAnimation {
+			0% { color : blue; }
+			30% { color : green;}
+			100% { color : red;}
+			}
+			span {
+				animation-name: textColorAnimation;
+				animation-duration: 20s;
+				animation-iteration-count: infinite;
+				transition : font-size 5s;
+				font-size: 20px;
+			}
+			#sigan {
+            position: fixed;
+            top: 120px;
+            left: 150px;
+            width: 350px;
+            padding: 5px;
+			
+        }
+		#winter {
+            position: fixed;
+            top: 120px;
+            right: 150px;
+            width: 350px;
+            padding: 5px;
+			
+        }
+		#winter1 {
+            position: fixed;
+            top: 630px;
+            right: 150px;
+            width: 350px;
+            padding: 5px;
+			
+        }
+		#fixed17 {
+				position: fixed;
+				top: 300px;
+				left: 600px;
+				width: 200px;
+				padding: 10px;
+				color: black;
+			}
+		</style>
+		
+	</head>
+	
+
+	<script> 
+var files = [
+        "media/winter.jpg",
+        "media/wt1.jpg",
+        "media/wt2.jpg"
+    
+        
+        
+      ];
+      var imgs = new Array();
+      for (var i = 0; i < files.length; i++) {
+        imgs[i] = new Image(); // 메모리에 이미지 객체 생성
+        imgs[i].src = files[i]; // 이미지 로딩
+      }
+
+      // 다음 이미지 출력
+      var next = 1;
+      function change(img) {
+        img.src = imgs[next].src; // 이미지 변경
+        var nameSplit = files[next].split('/');
+        var nameText = document.getElementById("name");
+        var sizeText = document.getElementById("size");
+        nameText.innerHTML = "이미지 이름: " + nameSplit[1];
+        sizeText.innerHTML = "폭: " + img.width + " 높이: " + img.height;
+        next++; // 다음 이미지
+        next %= imgs.length; // 개수를 넘으면 처음으로
+      }
+      function init(img){
+        var nameSplit = files[next-1].split('/');
+        var nameText = document.getElementById("name");
+        var sizeText = document.getElementById("size");
+        img.src = files[next-1];
+        nameText.innerHTML = "이미지 이름: " +nameSplit[1];
+        sizeText.innerHTML = "폭: "+ img.width +" 높이: " + img.height;
+      }
+</script>
+<body onload="showImage()">
+		<br><br><br><div style="text-align:center"><div>
+			<span id="div" >
+			  김성우를 소개합니다.</span
+			>
+		  </div> <br><br>
+        
+			<h4>이름: 김성우				<br> 
+        생년월일 : 2000 / 01 / 31<br>
+		연락처 : 010 - 2446 - xxxx<br>
+		좋아하는 음식 : 한식		<br>	
+        군대 출신 : 육군 제11기계화보병사단<br> 
+		좋아하는 아이돌 : 윈터 	<br></h4>
+		</div>
+		 
+		<img style="border:20px ridge wheat" img src = "media/sigan.jpg" id ="sigan"
+			onmouseover="over(this)"
+            onmouseout="on(this)">
+		
+			<img
+            style="border:20px ridge #2966eb"
+            src="media/winter.jpg"
+            alt="."
+            width=""
+            height=""
+            onclick="change(this)"
+            onload="init(this)"
+			id="winter"
+            
+            
+          />
+          <div id="winter1"><p id="name"></p>
+          <p id="size"></p></div>
+      
+			<div id="fixed17">
+				<br><a> <span>경서예지, 전건호 <br> 다정히 내 이름을 부르면</span></a>
+				<audio src='media/다정히.mp3' width='400' controls>
+			</div>
+	</body>
+	<script>
+		var div = document.getElementById("div");
+			var timerID = setInterval("doRotate()", 200);
+			// 200밀리초 주기로 doRotate() 호출
+	  
+			div.onclick = function(e) {
+			  // 마우스 클릭 이벤트 리스너
+			  clearInterval(timerID); 
+			  // 타이머 해제. 문자열 회전 중단
+			};
+			function doRotate() {
+			  var str = div.innerHTML;
+			  var firstChar = str.substr(0,1);
+			  var remains = str.substr(1,str.length-1);
+			  str = remains + firstChar;
+			  div.innerHTML = str;
+			}
+
+			  </script>
+</html>
