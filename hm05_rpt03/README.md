@@ -51,3 +51,7 @@
 - getCheckboxValue
 - showAlert
 - hideMenu
+- container
+- marquee
+- init
+- doRotate
